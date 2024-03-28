@@ -1,0 +1,15 @@
+<div class="container">
+  <video id="videoElement" autoplay></video>
+  <div class="icons">
+    <img
+      class="close"
+      (click)="redirectToAnotherPage()"
+      src="/assets/icons/x.svg"
+      alt=""
+    />
+    <img class="flash" src="/assets/icons/zap-off.svg" alt="" />
+    <img class="galary" src="/assets/icons/image.svg" alt="" />
+    <img class="change-camera" src="/assets/icons/refresh-ccw.svg" alt="" />
+  </div>
+  <img class="camera-button" src="/assets/button_camera.svg" alt="" (click)="takePhotoAndRedirect()"/>
+</div>

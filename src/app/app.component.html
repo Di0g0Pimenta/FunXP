@@ -1,0 +1,23 @@
+<ion-menu side="start" menuId="main-menu" contentId="main-content" menuClose="true" autoHide="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle>
+        <ion-item button [routerLink]="['/Profile']" (click)="menuClicked('Main Page')">
+          <ion-label>Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item button [routerLink]="['/news']" (click)="menuClicked('Secondary Page')">
+          <ion-label>News</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main-content"></ion-router-outlet>

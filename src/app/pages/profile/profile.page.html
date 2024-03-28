@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="tertiary">
+  <div class="profile-container">
+    <ion-img
+      src="assets/profile.svg"
+      class="profile-img custom-profile-img"
+      [src]="profileImageSrc"
+    ></ion-img>
+  </div>
+  <div class="edit-container">
+    <ion-img
+      src="assets/icons/edit-2.svg"
+      class="edit-img"
+      (click)="redirectToCamera()"
+    ></ion-img>
+  </div>
+  <h1 class="ion-text-center">Guest</h1>
+  <div class="buttons-settings">
+    <button class="notification">Notification</button>
+    <button class="settings">Settings</button>
+    <button class="security">Security</button>
+    <button class="info">Info</button>
+    <button class="about">About</button>
+  </div>
+  <h1 class="logo">BoaVista F.C</h1>
+</ion-content>

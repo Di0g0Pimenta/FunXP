@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  font-family: "Inter";
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#videoElement {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.camera-button {
+  top: 85%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.close {
+  top: 34px;
+  left: 28px;
+
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.flash {
+  top: 34px;
+  right: 28px;
+
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.galary {
+  top: 827px;
+  left: 28px;
+
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.change-camera {
+  top: 827px;
+  right: 28px;
+
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
