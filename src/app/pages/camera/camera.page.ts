@@ -77,6 +77,6 @@ export class CameraPage {
   }
 
   redirectToAnotherPage() {
-    window.location.href = "/home";
+    window.location.href = "/profile";
   }
 }

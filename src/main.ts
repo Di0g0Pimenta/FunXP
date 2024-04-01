@@ -8,6 +8,9 @@ import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 import { provideServiceWorker } from '@angular/service-worker';
 
+import { provideHttpClient } from "@angular/common/http";
+
+
 if (environment.production) {
   enableProdMode();
 }
@@ -20,6 +23,7 @@ bootstrapApplication(AppComponent, {
     provideServiceWorker('ngsw-worker.js', {
         enabled: !isDevMode(),
         registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    provideHttpClient()
 ],
 });
