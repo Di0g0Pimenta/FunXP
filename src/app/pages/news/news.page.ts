@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonRow, IonCol, IonGrid } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonRow, IonCol, IonGrid, IonButtons } from '@ionic/angular/standalone';
 import { PostService } from '../../services/posts.service';
 import { Observable } from 'rxjs';
 
@@ -32,7 +32,7 @@ interface Post {
   templateUrl: './news.page.html',
   styleUrls: ['./news.page.scss'],
   standalone: true,
-  imports: [IonGrid, IonCol, IonRow, IonCardContent, IonCardSubtitle, IonCardTitle, IonCardHeader, IonCard, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonButtons, IonGrid, IonCol, IonRow, IonCardContent, IonCardSubtitle, IonCardTitle, IonCardHeader, IonCard, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class NewsPage implements OnInit {
 
@@ -52,23 +52,19 @@ export class NewsPage implements OnInit {
   }
 
   updateTotalPages(): void {
-    // Implementar lógica para atualizar o número total de páginas
   }
 
   formatarData(data: string): string {
-    // Implementar lógica para formatar a data
-    return data; // Por enquanto, apenas retorna a data sem formatar
+    return data;
   }
 
   async prevPage(): Promise<void> {
-    // Implementar lógica para navegar para a página anterior
   }
 
   async nextPage(): Promise<void> {
-    // Implementar lógica para navegar para a próxima página
   }
 
   openPost(link: string): void {
-    window.open(link, '_blank'); // Abrir o link da notícia em uma nova aba
+    window.open(link, '_blank');
   }
 }

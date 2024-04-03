@@ -1,15 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Posts</ion-title>
+    <ion-title>News</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card *ngFor="let post of posts$ | async" (click)="openPost(post.link)">
     <ng-container *ngIf="post">
-      <img *ngIf="post.yoast_head_json && post.yoast_head_json.og_image && post.yoast_head_json.og_image[0]?.url" [src]="post.yoast_head_json.og_image[0].url" alt="Post Image">
+      <img *ngIf="post.yoast_head_json && post.yoast_head_json.og_image && post.yoast_head_json.og_image[0]?.url" [src]="post.yoast_head_json.og_image[0].url" alt="New Image">
       <ion-card-header>
-        <ion-card-title>{{ post.title?.rendered }}</ion-card-title> <!-- Título do post -->
+        <ion-card-title>{{ post.title.rendered }}</ion-card-title> <!-- Título do post -->
       </ion-card-header>
       <div>
         <ion-card-subtitle>{{ post.date }}</ion-card-subtitle> <!-- Data de publicação do post -->
